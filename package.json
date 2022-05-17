@@ -18,5 +18,9 @@
     "husky": "^8.0.1",
     "jest": "^28.1.0",
     "prettier": "^2.6.2"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "cheerio": "^1.0.0-rc.10"
   }
 }
