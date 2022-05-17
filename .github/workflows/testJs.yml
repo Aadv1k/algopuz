@@ -3,7 +3,7 @@ name: Testing with jest
 on:
   push:
     paths:
-      - ./leetcode/**
+      - ./leetcode/*
 
 jobs:
   build:
