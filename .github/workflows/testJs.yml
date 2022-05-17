@@ -1,18 +1,24 @@
 name: Test code with jest
 
 on: 
-push:
-   paths: 
-    - ./leetcode
-
+   push:
+      paths: 
+         - ./leetcode/**
+         
 jobs:
-  test:
+  build:
     runs-os: ubuntu-latest
-    steps: 
-      - uses: actions/checkout@v2
-      - name: Test using Node.js
-        uses: actions/setup-node@v1
+    
+    steps:
+      - uses: actions/checkout@v3
+      - name: Use Node.js 16.x
+        uses: actions/setup-node@v3
         with:
-          node-version: '16'
-      - run: npm install
-      - run: npm test
+          node-version: "16.x"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Test code
+        run: npm test
