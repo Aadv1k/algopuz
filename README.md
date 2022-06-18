@@ -2,7 +2,7 @@
 
 **Algo**rithmic **Puz**zles in JavaScript
 
-to test (using jest):
+The tests are written using jest.
 
 ```
 npm install && npm test

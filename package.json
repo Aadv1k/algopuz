@@ -4,7 +4,7 @@
   "description": "This is a collection of Algorithmic puzzles in JavaScript",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
+    "test": "jest --verbose=false",
     "format": "prettier --write ."
   },
   "keywords": [
@@ -15,12 +15,7 @@
   "author": "Aadv1k <aadv1k@outlook.com>",
   "license": "GPL-3.0-or-later",
   "devDependencies": {
-    "husky": "^8.0.1",
     "jest": "^28.1.0",
     "prettier": "^2.6.2"
-  },
-  "dependencies": {
-    "axios": "^0.27.2",
-    "cheerio": "^1.0.0-rc.10"
   }
 }
