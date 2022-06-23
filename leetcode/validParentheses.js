@@ -1,7 +1,7 @@
 var isValid = function (s) {
   const pairs = { "(": ")", "{": "}", "[": "]" };
-  let res = s.split("");
-  let stack = [];
+  const res = s.split("");
+  const stack = [];
 
   if (res.length === 0 || res.length === 1) {
     return false;
@@ -11,7 +11,7 @@ var isValid = function (s) {
     if (Object.keys(pairs).includes(res[i])) {
       stack.push(pairs[res[i]]);
     } else {
-      let top = stack.pop();
+      const top = stack.pop();
       if (top !== res[i]) {
         return false;
       }

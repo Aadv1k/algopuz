@@ -22,5 +22,4 @@ var romanToInt = function (s) {
   }
   return stack.reduce((e, i) => e + i);
 };
-
 module.exports = romanToInt;

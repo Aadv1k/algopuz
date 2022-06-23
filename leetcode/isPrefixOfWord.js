@@ -3,8 +3,8 @@
  * @param {string} searchWord
  * @return {number}
  */
-var isPrefixOfWord = function(sentence, searchWord) {
-  let i = sentence.split(' ').findIndex(e => e.startsWith(searchWord))+1
+var isPrefixOfWord = function (sentence, searchWord) {
+  const i = sentence.split(" ").findIndex(e => e.startsWith(searchWord)) + 1;
   return i ? i : -1;
 };
 
